@@ -1,0 +1,5 @@
+stock_name,fishery_name,years,data_type,observer_coverage,observed_msi,estimated_msi,mean_annual_msi
+Stock A,groundfish trawl fishery 1,1990-1994,observer,53-74%,"13, 13, 15, 13, 9","19, 21, 14, 6, 11",10.4
+Stock A,longline fishery 1,1990-1994,observer,23-55%,"1, 0, 0, 1, 0","2, 0, 0, 4, 1",1.4
+Stock B,set gillnet fishery 1,1990-1993,logbook,n/a,"0, 1, 1, 1",n/a,0.75
+Stock B,drift gillnet fishery 1,1990-1991,observer,4-5%,"0, 2","0, 29",14.5

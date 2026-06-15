@@ -1,0 +1,3 @@
+common_name,scientific_name,stock_name,region,sar_year,n_best,cv_n,n_min,r_max,f_r,pbr,annual_msi_total,osp_status,strategic_status,esa_status,population_trend
+Pakicetus,Pakicetus sp.,Stock A,World,2025,10000,0.20,8464,0.04,0.5,84.6,12,unknown,not strategic,not listed,unknown
+Pakicetus,Pakicetus sp.,Stock B,World,2025,1500,0.35,1127,0.04,0.1,2.3,5,below,strategic,endangered,declining

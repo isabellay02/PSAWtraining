@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html",
+    "href": "pakicetus-stockB/pakicetus-stockB.html",
+    "title": "Pakicetus Stock B",
+    "section": "",
+    "text": "This section should summarize stock designation and DIP delineation information. This information should include a summary of the lines of evidence that support DIP delineations, and cite any supporting documents where this information is detailed. This section should also include a description of what is known about the geographic range of the stock (and a map if appropriate), including any known stock boundaries if applicable, and any uncertainty regarding the stock range. See Section 3.1 for additional guidance"
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#stock-definition-and-geographic-range",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#stock-definition-and-geographic-range",
+    "title": "Pakicetus Stock B",
+    "section": "",
+    "text": "This section should summarize stock designation and DIP delineation information. This information should include a summary of the lines of evidence that support DIP delineations, and cite any supporting documents where this information is detailed. This section should also include a description of what is known about the geographic range of the stock (and a map if appropriate), including any known stock boundaries if applicable, and any uncertainty regarding the stock range. See Section 3.1 for additional guidance"
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#population-size",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#population-size",
+    "title": "Pakicetus Stock B",
+    "section": "POPULATION SIZE",
+    "text": "POPULATION SIZE\nThis section should describe what is known about the size of the stock. It should include specific sub headings entitled “Minimum Population Estimate” and “Current Population Trend” describing these two characteristics of the stock. It may include additional sub headings as appropriate such as “Earlier abundance estimates”, “Recent surveys and abundance estimates”, and “Historical abundance”, among others. See Section 3.2.1 and 3.2.2 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#current-and-maximum-net-productivity-rates",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#current-and-maximum-net-productivity-rates",
+    "title": "Pakicetus Stock B",
+    "section": "CURRENT AND MAXIMUM NET PRODUCTIVITY RATES",
+    "text": "CURRENT AND MAXIMUM NET PRODUCTIVITY RATES\nThis section should describe what is known about the current and maximum net productivity rates. Default values should be used for Rmax in the absence of stock-specific measured values. See Section 3.2.3 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#potential-biological-removal",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#potential-biological-removal",
+    "title": "Pakicetus Stock B",
+    "section": "POTENTIAL BIOLOGICAL REMOVAL",
+    "text": "POTENTIAL BIOLOGICAL REMOVAL\nThis section of the SAR should provide a summary of the values used to calculate PBR and details its calculation. See Section 3.2 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#annual-human-caused-mortality-and-serious-injury",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#annual-human-caused-mortality-and-serious-injury",
+    "title": "Pakicetus Stock B",
+    "section": "ANNUAL HUMAN-CAUSED MORTALITY AND SERIOUS INJURY",
+    "text": "ANNUAL HUMAN-CAUSED MORTALITY AND SERIOUS INJURY\nThis section should contain a complete description of what is known about human-caused M/SI for the covered time period. It should include a specific sub heading entitled “Fisheries Information” that describes fishery-related M/SI and may include other sub headings as appropriate, such as “Alaska Native Subsistence/Harvest Information”, and “Other Mortality”, among others. See Section 3.3 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#status-of-stock",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#status-of-stock",
+    "title": "Pakicetus Stock B",
+    "section": "STATUS OF STOCK",
+    "text": "STATUS OF STOCK\nThis section should summarize four types of “status” of the stock: (1) current legal designation under the MMPA and ESA, (2) status relative to OSP (within OSP, below OSP, or unknown), (3) designation of strategic or not, and (4) a summary of trends in abundance and human-caused M/SI. See Section 3.4 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#other-factors-that-may-be-causing-a-decline-or-impeding-recovery",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#other-factors-that-may-be-causing-a-decline-or-impeding-recovery",
+    "title": "Pakicetus Stock B",
+    "section": "OTHER FACTORS THAT MAY BE CAUSING A DECLINE OR IMPEDING RECOVERY",
+    "text": "OTHER FACTORS THAT MAY BE CAUSING A DECLINE OR IMPEDING RECOVERY\nThis section, which is required for strategic stocks but otherwise optional, should describe any other factors affecting the status of the stock. It should only be a summary of the issue and should reference publications. See Section 3.5 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockB/pakicetus-stockB.html#references-cited",
+    "href": "pakicetus-stockB/pakicetus-stockB.html#references-cited",
+    "title": "Pakicetus Stock B",
+    "section": "REFERENCES CITED",
+    "text": "REFERENCES CITED"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Marine Mammal Stock Assessment Data",
+    "section": "",
+    "text": "This portal turns marine mammal Stock Assessment Reports (SARs) into structured, downloadable data. Every value follows the GAMMS IV guidelines. 2 stocks are currently available. (Data shown are illustrative placeholders during development.)"
+  },
+  {
+    "objectID": "index.html#how-to-access-this-data",
+    "href": "index.html#how-to-access-this-data",
+    "title": "Marine Mammal Stock Assessment Data",
+    "section": "How to access this data",
+    "text": "How to access this data\n\n\nDownload\n\nstock_summary.csv\nfisheries_msi.csv\ndata_dictionary.csv\n\n\n\nRead directly in R\nurl &lt;- paste0(\n  \"https://raw.githubusercontent.com/\",\n  \"isabellay02/PSAWtraining/main/\",\n  \"data/stock_summary.csv\")\nstocks &lt;- read.csv(url)\n\n\nWhat the fields mean\nEvery column — units, definition, and the GAMMS section it comes from — is documented in the data dictionary."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html",
+    "href": "pakicetus-stockA/pakicetus-stockA.html",
+    "title": "Pakicetus Stock A",
+    "section": "",
+    "text": "This section should summarize stock designation and DIP delineation information. This information should include a summary of the lines of evidence that support DIP delineations, and cite any supporting documents where this information is detailed. This section should also include a description of what is known about the geographic range of the stock (and a map if appropriate), including any known stock boundaries if applicable, and any uncertainty regarding the stock range. See Section 3.1 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#stock-definition-and-geographic-range",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#stock-definition-and-geographic-range",
+    "title": "Pakicetus Stock A",
+    "section": "",
+    "text": "This section should summarize stock designation and DIP delineation information. This information should include a summary of the lines of evidence that support DIP delineations, and cite any supporting documents where this information is detailed. This section should also include a description of what is known about the geographic range of the stock (and a map if appropriate), including any known stock boundaries if applicable, and any uncertainty regarding the stock range. See Section 3.1 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#population-size",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#population-size",
+    "title": "Pakicetus Stock A",
+    "section": "POPULATION SIZE",
+    "text": "POPULATION SIZE\nThis section should describe what is known about the size of the stock. It should include specific sub headings entitled “Minimum Population Estimate” and “Current Population Trend” describing these two characteristics of the stock. It may include additional sub headings as appropriate such as “Earlier abundance estimates”, “Recent surveys and abundance estimates”, and “Historical abundance”, among others. See Section 3.2.1 and 3.2.2 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#current-and-maximum-net-productivity-rates",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#current-and-maximum-net-productivity-rates",
+    "title": "Pakicetus Stock A",
+    "section": "CURRENT AND MAXIMUM NET PRODUCTIVITY RATES",
+    "text": "CURRENT AND MAXIMUM NET PRODUCTIVITY RATES\nThis section should describe what is known about the current and maximum net productivity rates. Default values should be used for Rmax in the absence of stock-specific measured values. See Section 3.2.3 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#potential-biological-removal",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#potential-biological-removal",
+    "title": "Pakicetus Stock A",
+    "section": "POTENTIAL BIOLOGICAL REMOVAL",
+    "text": "POTENTIAL BIOLOGICAL REMOVAL\nThis section of the SAR should provide a summary of the values used to calculate PBR and details its calculation. See Section 3.2 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#annual-human-caused-mortality-and-serious-injury",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#annual-human-caused-mortality-and-serious-injury",
+    "title": "Pakicetus Stock A",
+    "section": "ANNUAL HUMAN-CAUSED MORTALITY AND SERIOUS INJURY",
+    "text": "ANNUAL HUMAN-CAUSED MORTALITY AND SERIOUS INJURY\nThis section should contain a complete description of what is known about human-caused M/SI for the covered time period. It should include a specific sub heading entitled “Fisheries Information” that describes fishery-related M/SI and may include other sub headings as appropriate, such as “Alaska Native Subsistence/Harvest Information”, and “Other Mortality”, among others. See Section 3.3 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#status-of-stock",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#status-of-stock",
+    "title": "Pakicetus Stock A",
+    "section": "STATUS OF STOCK",
+    "text": "STATUS OF STOCK\nThis section should summarize four types of “status” of the stock: (1) current legal designation under the MMPA and ESA, (2) status relative to OSP (within OSP, below OSP, or unknown), (3) designation of strategic or not, and (4) a summary of trends in abundance and human-caused M/SI. See Section 3.4 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#other-factors-that-may-be-causing-a-decline-or-impeding-recovery",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#other-factors-that-may-be-causing-a-decline-or-impeding-recovery",
+    "title": "Pakicetus Stock A",
+    "section": "OTHER FACTORS THAT MAY BE CAUSING A DECLINE OR IMPEDING RECOVERY",
+    "text": "OTHER FACTORS THAT MAY BE CAUSING A DECLINE OR IMPEDING RECOVERY\nThis section, which is required for strategic stocks but otherwise optional, should describe any other factors affecting the status of the stock. It should only be a summary of the issue and should reference publications. See Section 3.5 for additional guidance."
+  },
+  {
+    "objectID": "pakicetus-stockA/pakicetus-stockA.html#references-cited",
+    "href": "pakicetus-stockA/pakicetus-stockA.html#references-cited",
+    "title": "Pakicetus Stock A",
+    "section": "REFERENCES CITED",
+    "text": "REFERENCES CITED"
+  }
+]
