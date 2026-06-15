@@ -1,0 +1,25 @@
+table,field,description,units,data_type,gamms_reference,example_or_allowed_values
+stock_summary,common_name,Common name of the species,text,string,Appendix C header,Harbor porpoise
+stock_summary,scientific_name,Genus and species (italicized in report),text,string,Appendix C header,Phocoena phocoena
+stock_summary,stock_name,Name of the stock as designated by NMFS,text,string,Section 3.1,Gulf of Alaska
+stock_summary,region,NMFS region responsible for the SAR,text,string,Section 3.1,Alaska / Atlantic / Pacific / Pacific Islands
+stock_summary,sar_year,Year of this stock assessment report (used for versioning),year,integer,General,2025
+stock_summary,n_best,Best available estimate of total stock abundance,animals,number,Section 3.2.1,10000
+stock_summary,cv_n,Coefficient of variation of the abundance estimate (n_best),proportion,number,Section 3.2.1,0.20
+stock_summary,n_min,Minimum population estimate; 20th percentile of abundance: n_best / exp(0.842*sqrt(ln(1+cv_n^2))),animals,number,Section 3.2.1,8464
+stock_summary,r_max,Maximum net productivity rate; default 0.04 (cetaceans) or 0.12 (pinnipeds) absent stock-specific data,proportion per year,number,Section 3.2.3,0.04
+stock_summary,f_r,Recovery factor between 0.1 and 1.0,unitless,number,Section 3.2.4,0.5
+stock_summary,pbr,Potential Biological Removal: n_min * 0.5 * r_max * f_r,animals per year,number,Section 3.2,85
+stock_summary,annual_msi_total,Estimated mean annual human-caused mortality and serious injury (all sources),animals per year,number,Section 3.3,12
+stock_summary,osp_status,Status relative to Optimum Sustainable Population,category,string,Section 3.4.1,within / below / unknown
+stock_summary,strategic_status,Whether the stock is designated strategic under the MMPA,category,string,Section 3.4.2,strategic / not strategic
+stock_summary,esa_status,Listing status under the Endangered Species Act,category,string,Section 3.4,not listed / threatened / endangered
+stock_summary,population_trend,Direction of the current population trend,category,string,Section 3.2.2,increasing / stable / declining / unknown
+fisheries_msi,stock_name,Stock the fishery interaction applies to (links to stock_summary.stock_name),text,string,Appendix B,Gulf of Alaska
+fisheries_msi,fishery_name,Fishery name consistent with the List of Fisheries,text,string,Appendix B,groundfish trawl fishery 1
+fisheries_msi,years,Range of years summarized,year range,string,Appendix B,1990-1994
+fisheries_msi,data_type,Source of the M/SI data,category,string,Appendix B,observer / logbook / MMAP reports
+fisheries_msi,observer_coverage,Range of observer coverage over the years,percent range,string,Appendix B,53-74%
+fisheries_msi,observed_msi,Observed M/SI per year (comma-separated within the cell),animals,string,Appendix B,"13, 13, 15"
+fisheries_msi,estimated_msi,Estimated M/SI per year (comma-separated within the cell),animals,string,Appendix B,"6, 11"
+fisheries_msi,mean_annual_msi,Estimated mean annual M/SI attributable to this fishery,animals per year,number,Appendix B,0.32

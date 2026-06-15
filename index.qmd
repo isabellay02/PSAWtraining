@@ -1,0 +1,112 @@
+---
+title: "Marine Mammal Stock Assessment Data"
+subtitle: "Public, reproducible SAR data — built from GAMMS IV"
+date: today
+toc: false
+resources:
+  - data/stock_summary.csv
+  - data/data_dictionary.csv
+  - data/fisheries_msi.csv
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(readr)
+library(dplyr)
+library(reactable)
+library(htmltools)
+
+stocks <- read_csv("data/stock_summary.csv", show_col_types = FALSE)
+
+# Reproducibility: derive n_min and PBR from the raw inputs using the GAMMS
+# formulas, rather than trusting stored values. The portal shows the COMPUTED
+# numbers, so the data can never silently disagree with the guidelines.
+stocks <- stocks |>
+  mutate(
+    n_min_calc = n_best / exp(0.842 * sqrt(log(1 + cv_n^2))),
+    pbr_calc   = n_min_calc * 0.5 * r_max * f_r
+  )
+```
+
+```{r}
+#| label: lastmod
+#| include: false
+n_stocks <- nrow(stocks)
+```
+
+This portal turns marine mammal Stock Assessment Reports (SARs) into structured,
+downloadable data. Every value follows the
+[GAMMS IV guidelines](https://www.fisheries.noaa.gov/national/laws-and-policies/policy-directive-system).
+**`r n_stocks` stocks** are currently available. *(Data shown are illustrative
+placeholders during development.)*
+
+```{r}
+#| label: table
+#| echo: false
+reactable(
+  stocks |>
+    transmute(
+      Species   = sprintf("%s (%s)", common_name, scientific_name),
+      Stock     = stock_name,
+      Region    = region,
+      Year      = sar_year,
+      Abundance = round(n_best),
+      CV        = round(cv_n, 2),
+      Nmin      = round(n_min_calc),
+      PBR       = round(pbr_calc, 1),
+      `Annual M/SI` = annual_msi_total,
+      Status    = strategic_status,
+      ESA       = esa_status
+    ),
+  searchable = TRUE,
+  filterable = TRUE,
+  sortable   = TRUE,
+  defaultPageSize = 15,
+  highlight  = TRUE,
+  striped    = TRUE,
+  defaultColDef = colDef(align = "left", minWidth = 70),
+  columns = list(
+    Species   = colDef(minWidth = 160),
+    Abundance = colDef(format = colFormat(separators = TRUE), align = "right"),
+    Nmin      = colDef(format = colFormat(separators = TRUE), align = "right"),
+    PBR       = colDef(align = "right"),
+    `Annual M/SI` = colDef(align = "right"),
+    Status = colDef(cell = function(value) {
+      color <- if (value == "strategic") "#A32D2D" else "#3B6D11"
+      bg    <- if (value == "strategic") "#FCEBEB" else "#EAF3DE"
+      span(style = sprintf("color:%s;background:%s;padding:2px 8px;border-radius:6px;font-size:12px", color, bg), value)
+    })
+  )
+)
+```
+
+## How to access this data
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### Download
+- [stock_summary.csv](data/stock_summary.csv)
+- [fisheries_msi.csv](data/fisheries_msi.csv)
+- [data_dictionary.csv](data/data_dictionary.csv)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Read directly in R
+```r
+url <- paste0(
+  "https://raw.githubusercontent.com/",
+  "isabellay02/PSAWtraining/main/",
+  "data/stock_summary.csv")
+stocks <- read.csv(url)
+```
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### What the fields mean
+Every column — units, definition, and the GAMMS section it comes from — is
+documented in the [data dictionary](data/data_dictionary.csv).
+:::
+
+:::

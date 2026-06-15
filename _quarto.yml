@@ -1,6 +1,7 @@
 project:
   type: website
   render:
+    - index.qmd
     - pakicetus-stockA/pakicetus-stockA.qmd
     - pakicetus-stockB/pakicetus-stockB.qmd
 
@@ -8,6 +9,8 @@ website:
   title: "Marine Mammal Stock Assessment Report - IN DEVELOPMENT"
   navbar:
     left:
+      - file: index.qmd
+        text: Data Portal
       - file: pakicetus-stockA/pakicetus-stockA.qmd
         text: Pakicetus - Stock A
       - file: pakicetus-stockB/pakicetus-stockB.qmd
